@@ -1,30 +1,29 @@
 # 🏠 Smart Home Automation PCB
 
-<p align="center">
-  <img src="Images/PCB_3D.png" width="600">
-</p>
+An ESP32-based Smart Home Automation PCB designed using **KiCad**.
+
+---
 
 ## 📖 Overview
 
-This project presents a custom-designed **ESP32-based Smart Home Automation PCB** developed using **KiCad 9**. The board integrates AC power conversion, voltage regulation, relay driving, and ESP32 control for IoT-based home automation applications.
+This project demonstrates the complete design of a two-layer PCB for a smart home automation system. The PCB integrates an ESP32-WROOM-32 microcontroller, AC-DC power supply, relay driver circuit, voltage regulation, programming interface, and user controls.
 
 ---
 
 ## ✨ Features
 
-- ESP32-WROOM-32 Microcontroller
-- AC to DC Power Module (HLK-PM03)
-- AMS1117-3.3V Voltage Regulator
-- Relay Driver Circuit
+- ESP32-WROOM-32
+- HLK-PM03 AC-DC Module
+- AMS1117-3.3V Regulator
+- Relay Driver
 - Boot & Reset Buttons
 - UART Programming Header
-- Two-Layer PCB
-- Mounting Holes
-- Compact PCB Layout
+- Two-layer PCB
+- Compact Layout
 
 ---
 
-## 🛠️ Software Used
+## 🛠 Software
 
 - KiCad 9
 - Git
@@ -34,47 +33,44 @@ This project presents a custom-designed **ESP32-based Smart Home Automation PCB*
 
 ## 📷 Schematic
 
-![Schematic](Images/Schematic.svg)
+![Schematic](Images/smart%20home%20automation.svg)
 
 ---
 
 ## 📷 PCB Layout
 
-![PCB](Images/PCB_Top.png)
+![PCB](<img width="1469" height="872" alt="Images:PCB_Top" src="https://github.com/user-attachments/assets/6da928cb-323f-4120-a230-9ff739f2196e" />
+)
 
 ---
 
 ## 📷 3D View
 
-![3D](Images/PCB_3D.png)
+![3D](<img width="873" height="721" alt="Images:PCB_3D" src="https://github.com/user-attachments/assets/28ba268d-493b-4656-a1dc-cb07de80e1b9" />
+)
 
 ---
 
-## 📂 Repository Structure
+## 📁 Repository Structure
 
 ```text
 Smart-Home-Automation-PCB
-│
 ├── Images
 ├── Gerber
-├── KiCad_Project
+├── smart home automation.kicad_pcb
+├── smart home automation.kicad_sch
+├── smart home automation.kicad_pro
 └── README.md
 ```
-
----
-
-## 📦 Gerber Files
-
-The complete Gerber package required for PCB manufacturing is included in the `Gerber` folder.
 
 ---
 
 ## 🚀 Future Improvements
 
 - MQTT Integration
-- Mobile App Interface
+- Mobile App
 - Energy Monitoring
-- OTA Firmware Updates
+- OTA Updates
 
 ---
 
