@@ -9,48 +9,48 @@
 
 ---
 
-## 📖 Overview
+# 📖 Overview
 
-This project presents a **custom-designed ESP32-based Smart Home Automation PCB** developed using **KiCad 9**.
+This project is a custom-designed **ESP32-based Smart Home Automation PCB** created using **KiCad 9**.
 
-The PCB integrates an ESP32 microcontroller, AC-to-DC power conversion, voltage regulation, relay driver circuitry, programming interface, and user controls into a compact two-layer design suitable for IoT-based home automation.
+The board integrates an ESP32 microcontroller with an AC-to-DC power supply, voltage regulation, relay driver circuit, UART programming interface, and user controls for reliable IoT-based home automation.
 
 ---
 
 # ✨ Features
 
-* ESP32-WROOM-32 Microcontroller
-* HLK-PM03 AC-DC Power Module
-* AMS1117-3.3V Voltage Regulator
-* Relay Driver Circuit
-* Boot & Reset Buttons
-* UART Programming Header
-* Two-Layer PCB
-* Compact Layout
-* Mounting Holes
+- ESP32-WROOM-32 Microcontroller
+- HLK-PM03 AC to DC Converter
+- AMS1117-3.3V Voltage Regulator
+- Relay Driver Circuit
+- Boot & Reset Buttons
+- UART Programming Header
+- Two-Layer PCB
+- Compact Board Layout
+- Mounting Holes
 
 ---
 
-# 🛠 Software & Tools
+# 🛠 Software Used
 
-* KiCad 9
-* Git
-* GitHub
+- KiCad 9
+- Git
+- GitHub
 
 ---
 
 # 🔩 Hardware Components
 
-* ESP32-WROOM-32
-* HLK-PM03 AC-DC Converter
-* AMS1117-3.3V Regulator
-* Relay
-* BC817 Transistor
-* LEDs
-* Resistors
-* Capacitors
-* Push Buttons
-* Programming Header
+- ESP32-WROOM-32
+- HLK-PM03 AC-DC Module
+- AMS1117-3.3V
+- Relay
+- BC817 Transistor
+- LEDs
+- Resistors
+- Capacitors
+- Push Buttons
+- UART Header
 
 ---
 
@@ -62,14 +62,31 @@ The PCB integrates an ESP32 microcontroller, AC-to-DC power conversion, voltage 
 
 ---
 
+# 📷 PCB Layout
+
+<p align="center">
+<img src="Images/PCB_Top.png" width="750">
+</p>
+
+---
+
+# 📷 3D PCB View
+
+<p align="center">
+<img src="Images/PCB_3D.png" width="750">
+</p>
+
+---
+
 # ⚙️ Working Principle
 
-1. AC mains is converted into DC using the **HLK-PM03** power module.
-2. The **AMS1117-3.3V** regulator supplies stable 3.3V to the ESP32.
-3. The ESP32 processes commands received through Wi-Fi.
-4. GPIO pins drive the relay through the transistor driver circuit.
-5. The relay switches connected home appliances ON/OFF.
-6. Boot and Reset buttons are provided for programming and debugging.
+1. The AC mains supply is converted into regulated DC using the **HLK-PM03 AC-DC converter**.
+2. The **AMS1117-3.3V** regulator provides a stable 3.3V supply for the ESP32.
+3. The ESP32 receives commands through Wi-Fi.
+4. GPIO pins control the relay driver transistor.
+5. The relay switches external electrical appliances.
+6. Boot and Reset buttons simplify programming and debugging.
+7. The UART header enables firmware uploading and serial monitoring.
 
 ---
 
@@ -78,82 +95,91 @@ The PCB integrates an ESP32 microcontroller, AC-to-DC power conversion, voltage 
 ```text
 Smart-Home-Automation-PCB
 │
-├── Images
+├── BOM/
+│
+├── Gerber/
+│
+├── Images/
 │   ├── PCB_Top.png
 │   ├── PCB_3D.png
 │   └── smart home automation.svg
 │
-├── Gerber
-│
-├── KiCad_Project
+├── KiCad_Project/
+│   ├── smart home automation.kicad_pcb
 │   ├── smart home automation.kicad_pro
+│   ├── smart home automation.kicad_prl
 │   ├── smart home automation.kicad_sch
-│   └── smart home automation.kicad_pcb
+│   └── smart home automation-backups
 │
-├── README.md
-└── LICENSE
+└── README.md
 ```
 
 ---
 
 # 📦 Gerber Files
 
-The repository includes complete Gerber and drill files required for PCB fabrication.
+The complete Gerber package required for PCB manufacturing is included in the **Gerber** folder.
 
-Compatible with:
+Supported manufacturers include:
 
-* JLCPCB
-* PCBWay
-* ALLPCB
+- JLCPCB
+- PCBWay
+- ALLPCB
+- NextPCB
 
 ---
 
 # 🚀 Applications
 
-* Home Automation
-* Internet of Things (IoT)
-* Embedded Systems
-* Smart Appliance Control
-* PCB Design Learning
+- Smart Home Automation
+- IoT Systems
+- Embedded Systems
+- ESP32 Development
+- PCB Design Learning
+- Electronics Education
 
 ---
 
-# 📚 Learning Outcomes
+# 📚 Skills Demonstrated
 
-Through this project, I learned:
-
-* PCB Design using KiCad
-* Schematic Capture
-* Component Placement
-* PCB Routing
-* Design Rule Check (DRC)
-* Gerber Generation
-* PCB Manufacturing Workflow
+- PCB Design using KiCad
+- Schematic Capture
+- Component Selection
+- PCB Routing
+- Design Rule Check (DRC)
+- Gerber File Generation
+- PCB Manufacturing Preparation
+- Embedded Hardware Design
 
 ---
 
 # 🔮 Future Improvements
 
-* MQTT Integration
-* Mobile App Interface
-* Energy Monitoring
-* OTA Firmware Updates
-* Current & Voltage Monitoring
+- MQTT Integration
+- Mobile Application
+- Energy Monitoring
+- OTA Firmware Updates
+- Current & Voltage Sensing
+- Voice Assistant Integration
+- Smart Scheduling
 
 ---
 
 # 👩‍💻 Author
 
-**Varniya Bhatnagar**
+## Varniya Bhatnagar
 
-B.E. Electronics & Communication Engineering
+**B.E. Electronics & Communication Engineering**  
 Panjab University
 
-📧 **Email:** [varniyaece@gmail.com](mailto:varniyaece@gmail.com)
+### Connect with me
 
-🔗 **LinkedIn:**
-https://www.linkedin.com/in/varniya-bhatnagar-1ab361327/
+- 📧 Email: **varniyaece@gmail.com**
+- 💼 LinkedIn: https://www.linkedin.com/in/varniya-bhatnagar-1ab361327/
+- 🐙 GitHub: https://github.com/varniya07
 
 ---
 
-⭐ If you found this project useful, please consider giving it a star!
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ and following my GitHub profile for more Electronics, PCB Design, Embedded Systems, and VLSI projects.
