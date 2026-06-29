@@ -1,82 +1,159 @@
 # 🏠 Smart Home Automation PCB
 
-An ESP32-based Smart Home Automation PCB designed using **KiCad**.
+<p align="center">
+  <img src="https://img.shields.io/badge/KiCad-9.0-blue?style=for-the-badge&logo=kicad">
+  <img src="https://img.shields.io/badge/ESP32-WROOM--32-red?style=for-the-badge">
+  <img src="https://img.shields.io/badge/PCB-2%20Layer-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge">
+</p>
 
 ---
 
 ## 📖 Overview
 
-This project demonstrates the complete design of a two-layer PCB for a smart home automation system. The PCB integrates an ESP32-WROOM-32 microcontroller, AC-DC power supply, relay driver circuit, voltage regulation, programming interface, and user controls.
+This project presents a **custom-designed ESP32-based Smart Home Automation PCB** developed using **KiCad 9**.
+
+The PCB integrates an ESP32 microcontroller, AC-to-DC power conversion, voltage regulation, relay driver circuitry, programming interface, and user controls into a compact two-layer design suitable for IoT-based home automation.
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-- ESP32-WROOM-32
-- HLK-PM03 AC-DC Module
-- AMS1117-3.3V Regulator
-- Relay Driver
-- Boot & Reset Buttons
-- UART Programming Header
-- Two-layer PCB
-- Compact Layout
-
----
-
-## 🛠 Software
-
-- KiCad 9
-- Git
-- GitHub
+* ESP32-WROOM-32 Microcontroller
+* HLK-PM03 AC-DC Power Module
+* AMS1117-3.3V Voltage Regulator
+* Relay Driver Circuit
+* Boot & Reset Buttons
+* UART Programming Header
+* Two-Layer PCB
+* Compact Layout
+* Mounting Holes
 
 ---
 
-## 📷 Schematic
+# 🛠 Software & Tools
 
-![Schematic](Images/smart%20home%20automation.svg)
-
----
-
-## 📷 PCB Layout
-
-![PCB](<img width="1469" height="872" alt="Images:PCB_Top" src="https://github.com/user-attachments/assets/6da928cb-323f-4120-a230-9ff739f2196e" />
-)
+* KiCad 9
+* Git
+* GitHub
 
 ---
 
-## 📷 3D View
+# 🔩 Hardware Components
 
-![3D](<img width="873" height="721" alt="Images:PCB_3D" src="https://github.com/user-attachments/assets/28ba268d-493b-4656-a1dc-cb07de80e1b9" />
-)
+* ESP32-WROOM-32
+* HLK-PM03 AC-DC Converter
+* AMS1117-3.3V Regulator
+* Relay
+* BC817 Transistor
+* LEDs
+* Resistors
+* Capacitors
+* Push Buttons
+* Programming Header
 
 ---
 
-## 📁 Repository Structure
+# 📷 Schematic
+
+<p align="center">
+<img src="Images/smart%20home%20automation.svg" width="900">
+</p>
+
+---
+
+# ⚙️ Working Principle
+
+1. AC mains is converted into DC using the **HLK-PM03** power module.
+2. The **AMS1117-3.3V** regulator supplies stable 3.3V to the ESP32.
+3. The ESP32 processes commands received through Wi-Fi.
+4. GPIO pins drive the relay through the transistor driver circuit.
+5. The relay switches connected home appliances ON/OFF.
+6. Boot and Reset buttons are provided for programming and debugging.
+
+---
+
+# 📂 Repository Structure
 
 ```text
 Smart-Home-Automation-PCB
+│
 ├── Images
+│   ├── PCB_Top.png
+│   ├── PCB_3D.png
+│   └── smart home automation.svg
+│
 ├── Gerber
-├── smart home automation.kicad_pcb
-├── smart home automation.kicad_sch
-├── smart home automation.kicad_pro
-└── README.md
+│
+├── KiCad_Project
+│   ├── smart home automation.kicad_pro
+│   ├── smart home automation.kicad_sch
+│   └── smart home automation.kicad_pcb
+│
+├── README.md
+└── LICENSE
 ```
 
 ---
 
-## 🚀 Future Improvements
+# 📦 Gerber Files
 
-- MQTT Integration
-- Mobile App
-- Energy Monitoring
-- OTA Updates
+The repository includes complete Gerber and drill files required for PCB fabrication.
+
+Compatible with:
+
+* JLCPCB
+* PCBWay
+* ALLPCB
 
 ---
 
-## 👩‍💻 Author
+# 🚀 Applications
+
+* Home Automation
+* Internet of Things (IoT)
+* Embedded Systems
+* Smart Appliance Control
+* PCB Design Learning
+
+---
+
+# 📚 Learning Outcomes
+
+Through this project, I learned:
+
+* PCB Design using KiCad
+* Schematic Capture
+* Component Placement
+* PCB Routing
+* Design Rule Check (DRC)
+* Gerber Generation
+* PCB Manufacturing Workflow
+
+---
+
+# 🔮 Future Improvements
+
+* MQTT Integration
+* Mobile App Interface
+* Energy Monitoring
+* OTA Firmware Updates
+* Current & Voltage Monitoring
+
+---
+
+# 👩‍💻 Author
 
 **Varniya Bhatnagar**
 
-B.E. Electronics & Communication Engineering  
+B.E. Electronics & Communication Engineering
 Panjab University
+
+📧 **Email:** [varniyaece@gmail.com](mailto:varniyaece@gmail.com)
+
+🔗 **LinkedIn:**
+https://www.linkedin.com/in/varniya-bhatnagar-1ab361327/
+
+---
+
+⭐ If you found this project useful, please consider giving it a star!
